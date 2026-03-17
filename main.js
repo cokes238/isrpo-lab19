@@ -68,3 +68,77 @@ for (let i = 1; i <= 4; i++) {
     }
     console.log(stars)
 }
+
+function sum(a, b) {
+return a + b;
+}
+console.log(sum(3, 5));
+
+
+//6.3пр
+function multiply(a, b) {
+    return a * b
+}
+let result = multiply(5, 3)
+console.log(result)
+
+
+function sayHello(name) {
+    console.log(`Hello, ${name}`)
+}
+sayHello("Тимофей")
+
+
+//6.5пр
+
+function printInfo(name, age) {
+    console.log(`Имя: ${name}, Возраст: ${age}`)
+}
+printInfo("Дима", 18)
+
+function greet (name = "Гость") {
+console.log("Привет, " + name);
+}
+greet();
+greet("Анастасия");
+
+//6.7пр
+function calculateDiscount(price, discount = 10) {
+    let finalPrice = price - (price * discount / 100)
+    return finalPrice
+}
+console.log(calculateDiscount(1000, 20))
+console.log(calculateDiscount(1000))
+
+
+const add = function (a, b) {
+return a + b;
+};
+console.log(add(2, 3));
+
+
+function makeCounter() {
+let count = 0; // Локальная переменная
+return function () {
+count++; // Функция "помнит" count
+return count;
+};
+}
+const counter = makeCounter();
+console.log(counter()); //1
+console.log(counter()); // 2
+console.log(counter()); //3
+
+
+function sumFunc(a, b) {
+return a + b;
+}
+const sumFunc2 = (a, b) => a + b;
+const double  = x => x * 2;
+const sumFunc3  = (a, b) =>a+b
+const sayGreeting = () => console.log("Hello");
+const square = x=>x*x;
+const calculate = (a, b) => {
+let result = a + b;
+return result * 2;
+};
