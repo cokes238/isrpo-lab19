@@ -142,3 +142,60 @@ const calculate = (a, b) => {
 let result = a + b;
 return result * 2;
 };
+
+
+let numbersArr = [1, 2, 3, 4, 5];
+console.log(numbersArr);
+console.log(numbersArr[0]);
+console.log(numbersArr[1]);
+
+//7.4пр
+let colors = ["красный", "синий", "белый"]
+console.log(colors[0])
+console.log(colors[colors.length - 1])
+colors[1] = "белый"
+console.log(colors)
+
+console.log(numbersArr.length);
+numbersArr.push(10);
+console.log(numbersArr);
+numbersArr.pop();
+console.log(numbersArr);
+
+//7.7 пр
+let students = []
+students.push("Дима")
+students.push("Андрей")
+students.push("Алиса")
+students.pop()
+console.log(students)
+
+
+let numbers2  = [10, 20, 30] ;
+for (let i = 0 ; i < numbers2.length; i++) {
+console.log(numbers2[i]);
+}
+
+for (let value of numbers2) {
+console.log(value);
+}
+
+let mixedArray = [1, "text", true, 3.14];
+console.log(mixedArray);
+
+console.log(numbersArr.includes (1));
+console.log(numbersArr.indexOf(2));
+
+console.log(fruits.includes ("яблоко")); // true
+console.log(fruits.includes ("манго")); // false
+
+let cities = ["Москва", "Санкт-Петербург", "Казань", "Новосибирск", "Екатеринбург"]
+let searchCity = "Казань"
+
+//7.12пр
+if (cities.includes(searchCity)) {
+    let index = cities.indexOf(searchCity)
+    console.log(`Город ${searchCity} найден, индекс: ${index}`)
+} else {
+    console.log(`Город ${searchCity} не найден в массиве`)
+}
