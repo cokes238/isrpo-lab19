@@ -199,3 +199,90 @@ if (cities.includes(searchCity)) {
 } else {
     console.log(`Город ${searchCity} не найден в массиве`)
 }
+
+
+let user2 = {
+name: "Ivan",
+age: 20,
+isStudent:
+true,
+};
+console.log(user2);
+
+console.log(user2.name);
+console.log(user2.age);
+
+console.log(user2["name"]);
+
+//8.4 пр
+let book = {
+    title: "Война и мир",
+    author: "Лев Толстой",
+    year: 1869
+}
+
+console.log(book.title)
+console.log(book.author)
+console.log(book.year)
+
+book.year = 2024
+
+console.log("После изменения:")
+console.log(book.title)
+console.log(book.author)
+console.log(book.year)
+
+
+user2.age = 30;
+user2.name = "Кирилл";
+delete user2.isStudent;
+console.log(user2);
+
+let user2 = {
+    name: "Ivan",
+    age: 20,
+    isStudent: true,
+    sayHello: function () {
+        console.log(`Hello, my name is ${this.name}`)
+    }
+}
+user2.sayHello()
+
+//8.7 пр
+let car = {
+    brand: "BMW",
+    year: 2020,
+    getInfo: function() {
+        console.log(`Автомобиль: ${this.brand}, Год выпуска: ${this.year}`)
+    }
+}
+car.getInfo()
+
+
+for (let key in user2) {
+console.log(key + ":" + user2 [key]);
+}
+
+//8.9 пр
+let product = {
+    name: "Ноутбук",
+    price: 55000,
+    brand: "Lenovo",
+    inStock: true,
+    color: "белый"
+}
+for (let key in product) {
+    console.log(key + ": " + product[key])
+}
+
+
+let student = {
+пате: "Григорий",
+skills: ["HTML", "CSS", "JS"],
+address: {
+city: "Волжский",
+street: "Пушкина",
+},
+};
+console.log(student.skills[0]);
+console.log(student.address.city);
